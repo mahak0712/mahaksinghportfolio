@@ -8,8 +8,21 @@
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * It is generallyb etter to create a new file per style scope.
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+ 
+ /*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+ @import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+
+
