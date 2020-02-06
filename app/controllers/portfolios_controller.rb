@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  # before_action :edit_portfolio_path, only: [:show, :edit, :update, :destroy]
   layout "portfolio"
   def index
     @portfolio_items = Portfolio.all
@@ -28,16 +29,17 @@ class PortfoliosController < ApplicationController
   
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+    
   end
 
-  def update
+def update
     @portfolio_item = Portfolio.find(params[:id])
 
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' }  
+        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
       else
-        format.html { render :edit } 
+        format.html { render :edit }
       end
     end
   end
@@ -65,5 +67,5 @@ class PortfoliosController < ApplicationController
                                       technologies_attributes: [:name]
                                      )
   end
-end
 
+end
