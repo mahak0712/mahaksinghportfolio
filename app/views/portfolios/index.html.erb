@@ -1,9 +1,26 @@
-<h1>Portfolio</h1>
+ <section class="section-meals">
 
 
-<%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %>
+        <ul class="meals-showcase clearfix">
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </ul>
+ </section>
 
-<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
