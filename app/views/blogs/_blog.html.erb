@@ -1,9 +1,26 @@
- <tr>
-        <td><%= blog.title.upcase %></td>
-         <td>Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</td>
-        <td><%= blog.body %></td>
-        <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></td>
-      </tr>
+ <div class="card mb-4">
+          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title"><%= link_to blog.title.upcase, blog %></h2>
+            <p class="card-text"><%= blog.body %></p>
+            <p class="card-text">
+              <%= link_to blog.status, toggle_status_blog_path(blog)if logged_in?(:site_admin) %>\
+<%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>\
+<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+            </p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago |
+            <%= blog.topic.title %>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+ 

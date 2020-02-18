@@ -1,0 +1,14 @@
+ <header class="masthead" style="background-image: url('assets/profile.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1><%= @page_title %></h1>
+            <p>Published <%= distance_of_time_in_words(@published, Time.now) if @published %> ago </p>
+            <span class="subheading"><%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

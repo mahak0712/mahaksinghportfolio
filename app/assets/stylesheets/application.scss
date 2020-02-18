@@ -165,6 +165,129 @@ body {
   }
 }
 
+/*
+ * Custom Styles
+ */
+
+.card-block{
+  color:black;
+  margin-bottom:20px;
+}
+    .or-seperator {
+        margin: 50px 0 15px;
+        text-align: center;
+        color:black;
+        border-top: 1px solid #e0e0e0;
+    }
+    .or-seperator b {
+        padding: 0 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    display: inline-block;
+        border: 1px solid #e0e0e0;
+    border-radius: 50%;
+        position: relative;
+        top: -22px;
+        z-index: 1;
+    }
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    border:x solid 1p-webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    font-size:2rem;
+    line-height: 80px;
+}
+
+.btnSubmitCancel
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #ff1a00, #cf0404);
+    color: #fff;
+}
+
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+}
+
+.btnSubmit:hover {
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    opacity: 0.6;
+  }
+
+.btnSubmitSignUp:hover {
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    opacity: 0.6;
+  }
+.btnSubmitCancel:hover {
+    background: -webkit-linear-gradient(left, #ff1a00, #cf0404);
+    opacity: 0.6;
+  }
+.form-control {
+    font-size: 16px;
+    transition: all 0.4s;
+    box-shadow: none;
+  }
+
+  .form-control:focus {
+        border-color: blue;
+    }
+
+.form-control, .btn {
+        border-radius: 20px;
+    outline: none !important;
+    }
+.auth-links a{
+  color:black;
+  text-decoration:none;
+}
+
+.control-label {
+    font-weight: normal;
+    font-size: 13px;
+  }
+  .signup{
+  margin-top:20px;
+  text-align: left;
+  }
+  .register-text {
+  text-align: center;
+}
+.btnSubmitSignUp
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 50%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
 
 
 
+  
