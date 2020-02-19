@@ -5,15 +5,15 @@
   </p>
 </div>  -->
 
-   <li>
-            <div class="hovereffect">
+   <li class="li" data-id= "<%= portfolio_item.id %>">
+            <div class="hovereffect" >
 
               <figure class="meal-photo">
                <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil?%>
               </figure>
               <div class="overlay">
                 <h2><%=portfolio_item.title %></h2>
-                <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) , class: "info" %>
+                <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item)  ,class: "info" %>
                 
 
               </div>

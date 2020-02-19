@@ -1,7 +1,7 @@
  <section class="section-meals">
 
 
-        <ul class="meals-showcase clearfix">
+        <ul class="meals-showcase clearfix <%= "sortable" if logged_in(:site_admin) %>" >
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </ul>
  </section>
