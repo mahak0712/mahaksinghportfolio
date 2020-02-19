@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
@@ -9,10 +10,11 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-
-
+<%= javascript_pack_tag 'hello_coffee' %>
+<%= stylesheet_link_tag '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/le-frog/jquery-ui.min.css' %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
