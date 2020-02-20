@@ -470,3 +470,41 @@ footer .copyright {
 .portfolio-form{
   padding:30px;
 }
+
+.portfolio-container{
+  padding:40px;
+}
+
+.btnUpload
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    height:50px;
+    text-align:center;
+    width: 100%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #cf6d17, #8811c5);
+    color: #fff;
+}
+.btnUpload:hover {
+    background: -webkit-linear-gradient(left, #cf6d17, #8811c5);
+    opacity: 0.6;
+  }
+  .btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    height:50px;
+    text-align:center;
+    width: 100%;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #cf6d17, #8811c5);
+    color: #fff;
+    float:center;
+}
+.btnSubmit:hover {
+    background: -webkit-linear-gradient(left, #cf6d17, #8811c5);
+    opacity: 0.6;
+  }
