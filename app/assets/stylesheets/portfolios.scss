@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
 /*
 Orange color: #e67e22
 
@@ -507,4 +508,8 @@ footer .copyright {
 .btnSubmit:hover {
     background: -webkit-linear-gradient(left, #cf6d17, #8811c5);
     opacity: 0.6;
+  }
+
+  #techForm{
+  padding-bottom:10px;
   }
