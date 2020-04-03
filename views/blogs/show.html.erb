@@ -1,0 +1,93 @@
+<!-- Blog Entries Column -->
+
+      <div class="col-md-12">
+        <h2><%= @blog.title %></h2>
+        
+<nav class="breadcrumb", style= "background-color:  #778899">
+    <%= link_to "Home", root_path, class: 'breadcrumb-item' %>
+    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
+
+    <span class="breadcrumb-item active" style="color:white;"><%= @blog.title %></span>
+
+    <span class="pull-right">
+      <%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('trash'), @blog, method: :delete, data: { confirm: 'Are you sure you want to delete this post' }, style:"color:red; size:20px" if logged_in?(:site_admin) %>
+    </span>
+  </nav>
+
+      <p><%= markdown @blog.body %></p>
+
+
+<div  class="card my-4" style = "border-style: none; background-color: #fbf9ff">
+          
+          <div class="card-body">
+           
+              
+                <li style= "text-decoration: none; font-size:27px; font-weight: 1000; list-style-type: none;">
+           <% @side_bar_topics.each do |topic| %>
+      <p class = "btn btn-primary"><%= link_to topic.title, topic_path(topic) , style: "text-decoration: none;" %></p>
+    <% end %></li>
+               
+           
+          </div>
+        </div>
+
+
+
+<span style = "font-weight: 900" >COMMENTS (<%= @comment_count %>)</span>
+
+<div id="new-comments" data-id="<%= @blog.id %>">
+<%= render 'comments/comment_form' %>
+</div>
+
+ 
+<div id="comments" data-id="<%= @blog.id %>">
+  
+<%= render @blog.comments.recent %>
+
+
+
+
+<div class="comment-card">
+  <div class="card" style="border-style: none;">
+    <div class = "card-block">
+      <div class ="row">
+        
+        <div id ="grav" class="col-md-2" style="width:40;">
+
+          
+        </div>
+     
+       
+<div class="col-md-10">
+          <div id= "comment-content" style = "">
+            
+          </div>
+
+          <div id = "comment-attr" class="comment-attribution" style = " font-size: .8em;
+  font-style: italic;">
+             <span id ="comm-name" class="comment-name" style="font-weight: 700;"></span>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Comments end-->
+
+
+</div>
+
+
+
+        
+     
+
+
+
+
+
+
+

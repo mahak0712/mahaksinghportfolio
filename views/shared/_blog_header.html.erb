@@ -1,0 +1,23 @@
+ <header class="masthead" style="background-image: url('/assets/blog_background.jpg')">
+   <%= render 'shared/blog_nav'%>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h2><%= @page_title %></h2>
+
+            <p style="font-size: 20px;"> <%=   @published.strftime( "%A, %B %e,  %Y ") if @published  %>  </p>
+            <span class="subheading"><%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></span>
+            <h3><%= link_to 'Topics', topics_path %></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  
+
+
+  

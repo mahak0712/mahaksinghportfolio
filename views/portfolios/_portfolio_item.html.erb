@@ -1,0 +1,95 @@
+
+ <div class="col-md-6">
+
+
+         <!--  <div class="card2 mb-4 shadow" data-id= "<%= portfolio_item.id %>" >
+   
+  
+  
+         
+
+              <figure class="meal-photo">
+
+              <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), style: "width:550px; height:400px;", class: "image-wrapper" %> 
+              </figure>
+              <div class="overlay">
+                <h2><%=portfolio_item.subtitle %></h2>
+                <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item)  ,class: "info" %>
+                
+
+       
+        
+          </div>
+     </div> -->
+
+     <div class="wrapper">
+  <div class="card2 mb-4 shadow" data-id= "<%= portfolio_item.id %>" >
+    <div class="front">
+      <p class="para price"><%=portfolio_item.title %></p>
+    </div>
+    <div class="right">
+      <h1 class="heading"><%=portfolio_item.subtitle %></h1>
+      <p>Technologies</p>
+
+      <ul>
+       <% portfolio_item.technologies.each do |t| %>
+
+        <li><%= t.name %></li>
+    
+
+       <% end %>
+      </ul>
+      
+      <button><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></button>
+    </div>
+  </div>
+  <div class="img-wrapper">
+       <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), style: "width:340px; height:240px;", class: "img" %>    
+  </div>
+</div>
+        </div>
+
+
+
+
+        
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item.id) %></p>
+<p><%= portfolio_item.subtitle %></p>
+<p><%= portfolio_item.body %></p>
+
+<%= link_to "Edit", edit_portfolio_path(portfolio_item.id) if logged_in?(:site_admin)  %>
+<%= link_to 'Delete Portfolio Item', portfolio_path(portfolio_item.id), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)  %> -->

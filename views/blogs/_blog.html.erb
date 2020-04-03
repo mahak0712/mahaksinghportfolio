@@ -1,0 +1,29 @@
+ <div id = "blog-card" class="card mb-4">
+          
+          <div  class="card-body">
+          
+ 
+            <h2 class="card-title"><%= link_to blog.title.upcase, blog %></h2>
+            <p class="card-text"><%= truncate(markdown(blog.body), length: 600, escape: false) %></p>
+            <p class="card-text">
+              <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
+            </p>
+
+
+            <%= link_to 'Read more', blog ,class: "btn btn-primary"%>
+          </div>
+      
+          <div class="card-footer text-muted">
+            Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago |
+            <%= blog.topic.title %>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,17 @@
+<% unless current_user.is_a? GuestUser %>
+<%= form_for [@blog, @comment] do |f| %>
+<div class="form-group">
+
+<%= f.text_area :content , class: 'form-control form-control-lg', rows: 3%>
+</div>
+
+<div style = "float:left;">
+<%= f.submit 'Post Comment', class: 'btn btn-primary' %>
+<% end %>
+</div>
+<div style = "float:right;">
+<%= link_to 'Back', blogs_path,class: 'btn btn-primary' %>
+</div>
+</div>
+
+<%end%>
