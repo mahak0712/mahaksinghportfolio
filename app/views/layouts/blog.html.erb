@@ -6,10 +6,10 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-   
+ 
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
-
+   
 
     <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -18,12 +18,12 @@
   <body>
     
 <!-- Navigation -->
- <%= render 'shared/blog_nav'%>
+
 <!-- End of Nav -->
 
 
  <!-- Page Header -->
- <%= render 'shared/blog_header'%>
+<%= render 'shared/blog_header'%>
 
   <!-- End of Page Header -->
 
@@ -38,7 +38,7 @@
 
 
     <!-- start of sidebar -->
-<%= render 'shared/blog_sidebar'%>
+
 
     <!-- end of sidebar -->
 
@@ -46,6 +46,7 @@
   
 </div>
 </div>
+
 <!-- end of pager -->
 
     <!-- start of footer -->
@@ -55,8 +56,10 @@
 
     <!-- end of footer -->
         
-    <hr>
-    <%= source_helper("blog") %>
+    
+  
  
   </body>
+
 </html>
+

@@ -1,21 +1,63 @@
 
+ <div class="col-md-6">
 
-   <li class="li" data-id= "<%= portfolio_item.id %>">
-            <div class="hovereffect" >
+
+         <!--  <div class="card2 mb-4 shadow" data-id= "<%= portfolio_item.id %>" >
+   
+  
+  
+         
 
               <figure class="meal-photo">
 
-              <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), style: "width:400px; height:300px;" %> 
+              <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), style: "width:550px; height:400px;", class: "image-wrapper" %> 
               </figure>
               <div class="overlay">
-                <h2><%=portfolio_item.title %></h2>
+                <h2><%=portfolio_item.subtitle %></h2>
                 <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item)  ,class: "info" %>
                 
 
-              </div>
-            </div>
+       
+        
+          </div>
+     </div> -->
 
-          </li>       
+     <div class="wrapper">
+  <div class="card2 mb-4 shadow" data-id= "<%= portfolio_item.id %>" >
+    <div class="front">
+      <p class="para price"><%=portfolio_item.title %></p>
+    </div>
+    <div class="right">
+      <h1 class="heading"><%=portfolio_item.subtitle %></h1>
+      <p>Technologies</p>
+
+      <ul>
+       <% portfolio_item.technologies.each do |t| %>
+
+        <li><%= t.name %></li>
+    
+
+       <% end %>
+      </ul>
+      
+      <button><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></button>
+    </div>
+  </div>
+  <div class="img-wrapper">
+       <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), style: "width:340px; height:240px;", class: "img" %>    
+  </div>
+</div>
+        </div>
+
+
+
+
+        
+
+
+
+
+ 
 
 
 

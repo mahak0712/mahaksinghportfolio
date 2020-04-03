@@ -1,15 +1,19 @@
 
 
    <!-- Blog Entries Column -->
-    
+   
       <div class="col-md-8">
         <%= paginate @blogs %>
         <%= render @blogs %>
+
+
+
         <!-- start of pager -->
     <!-- Pager -->
     <%= paginate @blogs %>
       
       </div>
+       <%= render 'shared/blog_sidebar'%>
       
 
   

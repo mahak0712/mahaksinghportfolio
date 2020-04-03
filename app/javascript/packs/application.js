@@ -2,8 +2,11 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+import 'bootstrap'
+
 import $ from 'jquery';
 import 'cocoon-js';
+
 
 
 
@@ -11,7 +14,7 @@ global.$ = $
 global.jQuery = $
 
 
-require('jquery-ui');
+require('jquery-ui')
 
 // jquery-ui theme
 require.context('file-loader?name=[path][name].[ext]&context=node_modules/jquery-ui-dist!jquery-ui-dist', true,    /jquery-ui\.css/ );
@@ -20,7 +23,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("gritter")
+//= require moment
+
 // require("jquery")
 // require("jquery-ui")
 // $(function(){
@@ -29,51 +33,130 @@ require("gritter")
 // });
 
 
-var ready, set_positions;
-ready = void 0;
-set_positions = void 0;
+
+
+
+
+document.addEventListener("turbolinks:load", function () {
+  let ready = undefined;
+  let set_positions = undefined;
  
-set_positions = function() {
-  $('.li').each(function(i) {
-    $(this).attr('data-pos', i + 1);
-  });
-};
+  set_positions = function () {
+    $('.li').each(function (i) {
+      $(this).attr('data-pos', i + 1);
+    });
+  }
  
-ready = function() {
-  set_positions();
-  $('.sortable').sortable();
-  $('.sortable').sortable().bind('sortupdate', function(e, ui) {
-    var updated_order;
-    updated_order = [];
+  ready = function () {
     set_positions();
-    $('.li').each(function(i) {
-      updated_order.push({
-        id: $(this).data('id'),
-        position: i + 1
+    $('.sortable').sortable();
+    $('.sortable').sortable().bind('sortupdate', function (e, ui) {
+      let updated_order;
+      updated_order = [];
+      set_positions();
+      $('.li').each(function (i) {
+        updated_order.push({
+          id: $(this).data('id'),
+          position: i + 1
+        });
+      });
+      return $.ajax({
+        type: 'PUT',
+        url: '/portfolios/sort',
+        data: {
+          order: updated_order
+        }
       });
     });
-    $.ajax({
-      type: 'PUT',
-      url: '/portfolios/sort',
-      data: {
-        order: updated_order
-      }
-    });
-  });
+    return;
+  }
+ 
+  $(document).ready(ready);
+});
+ 
+
+ 
+document.addEventListener("turbolinks:load", function () {
+ var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
 };
- 
-$(document).ready(ready);
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+});
 
 
 
- 
+
+document.addEventListener("turbolinks:load", function () {
+ var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-expand-lg").css('background-color', 'white');
+       } else {
+          $('.navbar-expand-lg').css('background-color', 'transparent');
+       }
+   });
+    }
+    $(document).ready(ready);
+});
 
 
 
 
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
+
