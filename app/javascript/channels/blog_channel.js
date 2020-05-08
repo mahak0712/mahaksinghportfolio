@@ -22,10 +22,16 @@ const comment_attribution = document.querySelector("#comment-attr");
           com.append(data.comment.content)
           comment_attribution.prepend("Comment posted by");
           comment_name.append(data.current_user) 
-          console.log(moment(data.comment.created_at).format('lll'))
-          
-          // const current_datetime = data.comment.created_at;
-    
+          const current_datetime = data.comment.created_at;
+
+           const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    let dateObj = new Date();
+    let month = monthNames[dateObj.getMonth()];
+    let day = String(dateObj.getDate()).padStart(2, '0');
+    let year = dateObj.getFullYear();
+    let output = month  + '\n'+ day  + ',' + year;
+    comment_attribution.append("on" + " " + output)
 
   var email = data.email;
 // -- maybe validate the email? 
@@ -53,9 +59,7 @@ $('#grav').append(gravatar);
 
   
     );
-console.log("Madar")
 
-console.log("Chod")
 
 
 

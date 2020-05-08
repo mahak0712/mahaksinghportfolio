@@ -28,15 +28,14 @@ class BlogsController < ApplicationController
     if logged_in?(:site_admin) || @blog.published?
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     
+    
     @comment = Comment.new
     @comment_count = @blog.comments.count
     @newest_comments = @blog.comments.order("created_at DESC")
-    puts "#{@comment_count}"
-      puts "#{@newest_comments}"
+    
     @page_title=@blog.title
     @published=@blog.created_at
-puts "cfhebvhiucebfyvbeuvybeuyvbuebvuyerbvuebrvbrvubvubrvbrfuvbruvburfbvurbv"
-    puts "#{@blog.comments}"
+
 
 
   else
@@ -58,7 +57,7 @@ end
   # POST /blogs
   # POST /blogs.json
   def create
-    puts "Whaattttt BLOG"
+  
     @blog = Blog.new(blog_params)
 
     respond_to do |format|

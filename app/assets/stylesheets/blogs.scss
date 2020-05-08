@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-
+@import "gritter";
 * {
     margin: 0;
     padding: 0;
@@ -684,7 +684,7 @@ margin-right:20px;
   font-style:bold;
 }
 .nav-link:hover{
-background-color:white;
+color:white;
 }
  
  .list-group-item p {
@@ -760,11 +760,4 @@ background-color:white;
 ;
 
 }
-
-
-
-
-
-
-
 

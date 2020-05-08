@@ -5,11 +5,13 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
+             <div class="card" style="background:none; border-style: none" >
             <h2><%= @page_title %></h2>
 
             <p style="font-size: 20px;"> <%=   @published.strftime( "%A, %B %e,  %Y ") if @published  %>  </p>
             <span class="subheading"><%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></span>
             <h3><%= link_to 'Topics', topics_path %></h3>
+          </div>
           </div>
         </div>
       </div>

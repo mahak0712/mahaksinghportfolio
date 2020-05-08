@@ -9,7 +9,6 @@ class BlogChannel < ApplicationCable::Channel
     # Any cleanup needed when channel is unsubscribed
   end
 def send_comment(data)
-  puts ("hey")
     current_user.comments.create!(content: data['comment'], blog_id: data['blog_id'])
   end
   
