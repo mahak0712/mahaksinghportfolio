@@ -23,7 +23,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-//= require moment
+//= require gritter
+
 
 // require("jquery")
 // require("jquery-ui")
@@ -54,7 +55,7 @@ document.addEventListener("turbolinks:load", function () {
       let updated_order;
       updated_order = [];
       set_positions();
-      $('.li').each(function (i) {
+      $('.card2').each(function (i) {
         updated_order.push({
           id: $(this).data('id'),
           position: i + 1
@@ -147,7 +148,7 @@ document.addEventListener("turbolinks:load", function () {
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-expand-lg").css('background-color', 'white');
+          $(".navbar-expand-lg").css({'background-color': 'RGBA(31,146,255,0.9)','color':'black'});
        } else {
           $('.navbar-expand-lg').css('background-color', 'transparent');
        }

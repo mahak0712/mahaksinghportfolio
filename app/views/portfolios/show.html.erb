@@ -26,7 +26,8 @@
     <div class="col-md-12" id="show_portfolio">
       <hr>
 <h3 style="text-align: center;"><%= @portfolio_item.subtitle %></h3>
-<p><%= @portfolio_item.body %></p>
+
+<p><%= markdown @portfolio_item.body %></p>
 <hr>
 <div class="shadow" style="text-align: center; margin-bottom: 30px; padding-bottom: 30px">
 <h2>Technologies</h2>

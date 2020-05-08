@@ -67,3 +67,4 @@ gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'ruby-debug-ide', '~> 0.7.0'
 gem 'debase', '~> 0.2.4.1'
 gem 'momentjs-rails', '~> 2.17', '>= 2.17.1'
+

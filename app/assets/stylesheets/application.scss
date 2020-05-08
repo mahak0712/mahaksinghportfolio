@@ -3,6 +3,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "animate";
+@import "gritter";
 
 
 
@@ -467,6 +468,19 @@ a{
 }
 
 
+.auth-links a {
+  color: white;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
 
 
 

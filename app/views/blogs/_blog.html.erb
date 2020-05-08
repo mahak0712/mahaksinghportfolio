@@ -13,9 +13,10 @@
             <%= link_to 'Read more', blog ,class: "btn btn-primary"%>
           </div>
       
-          <div class="card-footer text-muted">
+          <div class="card-footer text-muted" style="background-color: white; text-align: center;">
             Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago |
-            <%= blog.topic.title %>
+            <%= blog.topic.title %> | 
+            <%= blog.comments.count %> Comment
           </div>
         </div>
 
