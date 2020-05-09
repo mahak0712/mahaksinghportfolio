@@ -33,20 +33,9 @@ const webpack = require('webpack');
 environment.loaders.get('sass').use.splice(-1, 0, {
     loader: 'resolve-url-loader',
     options: {
-      attempts: 1
+        attempts: 1
     }
-  });
-  
-// module: {
-//     loaders: [
-//         {
-//             test: /\.css$/,
-//             include: [
-//                 path.resolve(__dirname, "not_exist_path")
-//             ],
-//             loader: "style!css"
-//         }
-
+}); 
 
 
 // Add an additional plugin of your choosing : ProvidePlugin
