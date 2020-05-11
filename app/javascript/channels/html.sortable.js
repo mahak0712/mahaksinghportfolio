@@ -903,7 +903,7 @@ var sortable = (function () {
           // log deprecation
           ['connectWith', 'disableIEFix'].forEach(function (configKey) {
               if (Object.prototype.hasOwnProperty.call(options, configKey) && options[configKey] !== null) {
-                  console.warn("HTML5Sortable: You are using the deprecated configuration \"" + configKey + "\". This will be removed in an upcoming version, make sure to migrate to the new options when updating.");
+                //   console.warn("HTML5Sortable: You are using the deprecated configuration \"" + configKey + "\". This will be removed in an upcoming version, make sure to migrate to the new options when updating.");
               }
           });
           // merge options with default options
