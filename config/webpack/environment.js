@@ -23,9 +23,7 @@
 const { environment } = require('@rails/webpacker');
 
 
-const coffee = require('./loaders/coffee')
 
-environment.loaders.append('coffee', coffee)
 const webpack = require('webpack');
 
 
