@@ -1,0 +1,48 @@
+{
+  "application.js": "/packs/js/application-ec7e0976eb3cf70021b8.js",
+  "application.js.map": "/packs/js/application-ec7e0976eb3cf70021b8.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-ec7e0976eb3cf70021b8.js"
+      ],
+      "js.map": [
+        "/packs/js/application-ec7e0976eb3cf70021b8.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-f10ca54bb0f70af6f989.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-f10ca54bb0f70af6f989.js.map"
+      ]
+    },
+    "portfolios": {
+      "js": [
+        "/packs/js/portfolios-a0288c37aa5f6512ed5a.js"
+      ],
+      "js.map": [
+        "/packs/js/portfolios-a0288c37aa5f6512ed5a.js.map"
+      ]
+    },
+    "src/application": {
+      "css": [
+        "/packs/css/src/application-c485a370.css"
+      ],
+      "js": [
+        "/packs/js/src/application-316635bbcd7d6242a8de.js"
+      ],
+      "js.map": [
+        "/packs/js/src/application-316635bbcd7d6242a8de.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-f10ca54bb0f70af6f989.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-f10ca54bb0f70af6f989.js.map",
+  "portfolios.js": "/packs/js/portfolios-a0288c37aa5f6512ed5a.js",
+  "portfolios.js.map": "/packs/js/portfolios-a0288c37aa5f6512ed5a.js.map",
+  "src/application.css": "/packs/css/src/application-c485a370.css",
+  "src/application.js": "/packs/js/src/application-316635bbcd7d6242a8de.js",
+  "src/application.js.map": "/packs/js/src/application-316635bbcd7d6242a8de.js.map"
+}
