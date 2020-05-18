@@ -3,58 +3,11 @@
 @import "gritter";
 
 
-/*
-Orange color: #e67e22
-
-*/
 
 
-/* ----------------------------------------------- */
-/* BASIC SETUP */
-/* ----------------------------------------------- */
-
-.fullscreen-bg {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 40%;
-  overflow: hidden;
- 
-}
-
-.fullscreen-bg__video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 40%;
-  min-height: 40%;
-}
-
-/* ----- PARAGRAPHS ----- */
 
 
-/* ----- ICONS ----- */
-.icon-big {
-    font-size: 350%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 10px;
-}
 
-.icon-small {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 120%;
-    margin-right: 10px;
-    
-    /*secrets to align text and icons*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
 
 /* ----- LINKS ----- */
 
@@ -136,149 +89,8 @@ input[type=submit]:active {
 
 
 
-.logo-black { 
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin: 5px 0;
-}
 
 
-
-/* ----------------------------------------------- */
-/* FEATURES */
-/* ----------------------------------------------- */
-
-.section-features .long-copy {
-    margin-bottom: 30px;
-}
-
-
-/* ----------------------------------------------- */
-/* MEALS */
-/* ----------------------------------------------- */
-
-.section-meals {
-    padding: 20px;
-}
-
-.meals-showcase {
-    list-style: none;
-    width: 100%;
-}
-
-.meals-showcase li {
-    display: block;
-    width: 50%;
-}
-
-.meal-photo {
-    width: 100%;
-    overflow: hidden;
-    background-color: black;
-}
-
-.meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-
-
-
-
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
- font-size: 24px;
-  border:10px solid black;
- 
-
-  resize: both;
-  background: #ffd73e33;
-  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-
-.hovereffect img {
-  width: 100%;
-    height: auto;
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-}
-
-.hovereffect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-  filter: grayscale(1) blur(3px);
-  -webkit-filter: grayscale(1) blur(3px);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.hovereffect a.info {
-  display: inline-block;
-  text-decoration:none;
-  padding: 7px 14px;
-  border: 1px solid #fff;
-  margin: 100px 0 0 0;
-  background-color: transparent;
-}
-
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
-}
-
-.hovereffect a.info, .hovereffect h2 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.hovereffect:hover a.info, .hovereffect:hover h2 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
 
 footer {
 background-color:black;
@@ -304,13 +116,6 @@ footer .copyright {
 
 
 /*Custom Styles*/
-.portfolio-form{
-  padding:30px;
-}
-
-.portfolio-container{
-  padding:40px;
-}
 
 .btnUpload
 {
@@ -350,13 +155,7 @@ footer .copyright {
   padding-bottom:10px;
   }
 
-  #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
+ 
 
 
 #show_portfolio h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
@@ -469,93 +268,21 @@ footer .copyright {
 }
 
 
-/*---------------*/
-/***** Bubba *****/
-/*---------------*/
 
-figure.effect-bubba {
-    background: #9e5406;
-}
 
-figure.effect-bubba img {
-    opacity: 0.7;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
 
-figure.effect-bubba:hover img {
-    opacity: 0.4;
-}
-
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-bubba figcaption::before {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-}
-
-figure.effect-bubba figcaption::after {
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-    -webkit-transform: scale(1,0);
-    transform: scale(1,0);
-}
-
-figure.effect-bubba h2 {
-    padding-top: 30%;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0,-20px,0);
-    transform: translate3d(0,-20px,0);
-}
-
-figure.effect-bubba p {
-    padding: 20px 2.5em;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,20px,0);
-    transform: translate3d(0,20px,0);
-}
-
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
 
 
 
 @import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
 
-*,
-*:before,
-*:after{
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
-  outline: 1px solid transparent;
-}
+// *,
+// *:before,
+// *:after{
+//   box-sizing: border-box;
+//   -webkit-tap-highlight-color: rgba(255,255,255,0);
+//   outline: 1px solid transparent;
+// }
 
 
 
@@ -747,145 +474,8 @@ button:hover{
   }
 }
 
-@media only screen and (max-width: 600px){
-  body{
-    transform: scale(.67);
-  }
-}
-
-.navbar-logo{
-  padding: 15px;
-  color: #fff;
-}
-.navbar-mainbg{
-  background-color: #5161ce;
-  padding: 0px;
-}
-#navbarSupportedContent{
-  overflow: hidden;
-  position: relative;
-}
-#navbarSupportedContent ul{
-  padding: 0px;
-  margin: 0px;
-}
-#navbarSupportedContent ul li a i{
-  margin-right: 10px;
-}
-#navbarSupportedContent li {
-  list-style-type: none;
-  float: left;
-}
-#navbarSupportedContent ul li a{
-  color: rgba(255,255,255,0.5);
-    text-decoration: none;
-    font-size: 15px;
-    display: block;
-    padding: 20px 20px;
-    transition-duration:0.6s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    position: relative;
-}
-#navbarSupportedContent>ul>li.active>a{
-  color: #5161ce;
-  background-color: transparent;
-  transition: all 0.7s;
-}
-#navbarSupportedContent a:not(:only-child):after {
-  content: "\f105";
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 14px;
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  padding-right: 3px;
-  vertical-align: middle;
-  font-weight: 900;
-  transition: 0.5s;
-}
-#navbarSupportedContent .active>a:not(:only-child):after {
-  transform: rotate(90deg);
-}
-.hori-selector{
-  display:inline-block;
-  position:absolute;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  transition-duration:0.6s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background-color: #fff;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 10px;
-}
-.hori-selector .right,
-.hori-selector .left{
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #fff;
-  bottom: 10px;
-}
-.hori-selector .right{
-  right: -25px;
-}
-.hori-selector .left{
-  left: -25px;
-}
-.hori-selector .right:before,
-.hori-selector .left:before{
-  content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #5161ce;
-}
-.hori-selector .right:before{
-  bottom: 0;
-    right: -25px;
-}
-.hori-selector .left:before{
-  bottom: 0;
-    left: -25px;
-}
 
 
-
-
-@media (max-width: 991px){
-  #navbarSupportedContent ul li a{
-    padding: 12px 30px;
-  }
-  .hori-selector{
-    margin-top: 0px;
-    margin-left: 10px;
-    border-radius: 0;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-  }
-  .hori-selector .left,
-  .hori-selector .right{
-    right: 10px;
-  }
-  .hori-selector .left{
-    top: -25px;
-    left: auto;
-  }
-  .hori-selector .right{
-    bottom: -25px;
-  }
-  .hori-selector .left:before{
-    left: -25px;
-    top: -25px;
-  }
-  .hori-selector .right:before{
-    bottom: -25px;
-    left: -25px;
-  }
-}
 
 
 
