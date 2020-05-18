@@ -5,6 +5,7 @@
 import 'bootstrap'
 
 import $ from 'jquery';
+
 import 'cocoon-js';
 
 
@@ -12,9 +13,11 @@ import 'cocoon-js';
 
 global.$ = $
 global.jQuery = $
-
-
 require('jquery-ui')
+require('jquery-ui/ui/widgets/sortable');
+require('jquery-ui/ui/disable-selection')
+
+
 
 // jquery-ui theme
 // require.context('file-loader?name=[path][name].[ext]&context=node_modules/jquery-ui-dist!jquery-ui-dist', true,    /jquery-ui\.css/ );
@@ -28,10 +31,10 @@ require("channels")
 
 // require("jquery")
 // require("jquery-ui")
-// $(function(){
-//   $('.sortable').sortable();
+//  $(function(){
+//    $('.sortable').sortable();
 
-// });
+//  });
 
 
 

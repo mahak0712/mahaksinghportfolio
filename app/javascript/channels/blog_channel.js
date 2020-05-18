@@ -18,7 +18,9 @@ const comment_attribution = document.querySelector("#comment-attr");
       },
 
         received(data) {
-          console.log(data)
+          // var email = data.email;
+          // var gravatar = $('<img>').attr({src: 'http://www.gravatar.com/avatar/?s=60x60' + (email)});
+          // $('#grav').append(gravatar);
           com.append(data.comment.content)
           comment_attribution.prepend("Comment posted by");
           comment_name.append(data.current_user) 
@@ -33,13 +35,13 @@ const comment_attribution = document.querySelector("#comment-attr");
     let output = month  + '\n'+ day  + ',' + year;
     comment_attribution.append("on" + " " + output)
 
-  var email = data.email;
+  
 // -- maybe validate the email? 
 
 // create a new image with the src pointing to the user's gravatar
-var gravatar = $('<img>').attr({src: 'http://www.gravatar.com/avatar/?s=60' + (email)});
-// append this new image to some div, or whatever
-$('#grav').append(gravatar);
+
+// // append this new image to some div, or whatever
+
 
 
 
