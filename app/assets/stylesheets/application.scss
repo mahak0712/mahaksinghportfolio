@@ -37,7 +37,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color:transparent;
+  background-image: none;
 }
 body {
   color: #fff;
@@ -194,7 +195,7 @@ body {
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
-    height: 300%;
+    height: 500%;
     top: -100%;
   }
 }
@@ -208,31 +209,26 @@ body {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+
   }
 
   .fullscreen-bg__video {
-    display: none;
+  
+    
+    background:  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100vh;
   }
 }
+z
 
 
-
-.but {
+.but  {
   display: inline-block;
-  border-radius: 4px;
-   background-color: transparent;
-  border: 1px;
-  border-style: solid;
-  border-color: white;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 25px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+ 
 }
 
 .but span {
@@ -240,6 +236,19 @@ body {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #D6133A;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  color:white;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 5px;
 }
 
 .but span:after {
@@ -267,25 +276,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-  background-color: #111;
-  font-family: "Montserrat";
-}
+
 
 .container {
   min-width: 700px;
@@ -297,6 +288,9 @@ body {
   transform-style: preserve-3d;
 }
 
+.footer{
+  background-color: transparent;
+}
 .side {
   position: absolute;
   text-align: center;
@@ -329,25 +323,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.front {
-  z-index: 2;
-  background-size: 100vh;
-  background-size: cover;
-  background-image: url("./back.jpg");
-}
-.back {
-  background-color: #333;
-  transform: rotateY(180deg);
-  z-index: 0;
-  padding-top: 10px;
-  background-image: url("./back.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-.container:hover {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
+
+
 form {
   text-align: left;
 }
@@ -481,9 +458,72 @@ a{
   margin: 0 auto;
   float: none;
 }
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+.navbar-brand{
+  margin-left: 22%;
+  margin-right: 10%;
+}
+.nav-link{
+  font-size: 20px;
+  
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar{
+  background-color: transparent;
+}
+.cover-heading{
+  text-align: center;
+}
+.inner cover{
+  margin-top: 10px;
+}
 
 
+@media screen and (max-width: 767px) {
+ .image{
+   display:none;
+ }
+ background-color: white;
+  .pull-left img{
+  display: none;
+ }
+ .navbar{
+  background-color: #296369;
+ }
+ .body{
+   background-image: url(/assets/office.jpg);
+ }
+ .footer{
+  background-color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.cover-heading{
+  text-align: left;
+  margin-top:30%;
+}
+.block{
+  text-align: left;
+}
 
+.but{
+  float:left;
+}
+.navbar-toggler{
+  background-color: #D6133A;
+}
+.list-inline {
+  display:none;
+}
+
+}
 
 
 

@@ -1,12 +1,14 @@
- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "background-color:white;">
     <div class="container">
-      <%= link_to "Mahak Singh", root_path , class: "navbar-brand"%>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+    <h2 class="navbar-brand brand-name">
+    <a href="/" class="pull-left"><img        
+    src="/assets/logo.png" style = "height:80px;width:100px"></a>
+</h2>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style = "border:none;">
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto center">
      
             <%= link_to "Home", root_path , class: "nav-link"%>
           
@@ -30,3 +32,4 @@
       </div>
     </div>
   </nav>
+  

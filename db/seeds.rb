@@ -18,7 +18,7 @@ User.create!(
 puts "1 regular user created"
 
 
-3.times do |topic|
+1.times do |topic|
   Topic.create!(
     title:"Topic #{topic}"
   )

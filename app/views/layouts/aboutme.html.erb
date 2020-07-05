@@ -11,7 +11,7 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
    
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> 
+
     <%= stylesheet_link_tag 'page', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -23,48 +23,49 @@
     
 <!-- Navigation -->
  
-        <header style="background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('/assets/we.jpeg');">
+        <header style="background-image:linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url('/assets/office3.jpeg');">
 
     
-           <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav">
-    <div class="container">
-      <%= link_to "Mahak Singh", root_path , class: "navbar-brand", style: "font-size:30px; color:white;font-weight:1300;" %>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse nav" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-     
-            <%= link_to "Home", root_path , class: "nav-link"%>
-          
-        
-            <%= link_to "About", aboutme_path, class: "nav-link" %>
-          
-          
-            <%= link_to "Contact", contact_path, class: "nav-link" %>
-          
-        
-            <%= link_to "Blogs", blogs_path , class: "nav-link"%>
-          
-          
-            <%= link_to "Portfolio", portfolios_path , class: "nav-link"%>
-          
-
-        
-            <%= login_helper "nav-link"%>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"  style = "background-color:white">
+        <div class="container">
+        <h2 class="navbar-brand brand-name">
+        <a href="/" class="pull-left"><img        
+        src="/assets/logo.png" style = "height:80px;width:100px"></a>
+    </h2>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="border:none">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto center">
+         
+                <%= link_to "Home", root_path , class: "nav-link"%>
+            
+                <%= link_to "About", aboutme_path, class: "nav-link" %>
+             
+              
+                <%= link_to "Contact", contact_path, class: "nav-link" %>
+              
+           
+                <%= link_to "Blogs", blogs_path , class: "nav-link"%>
+              
+             
+                <%= link_to "Portfolio", portfolios_path , class: "nav-link"%>
+              
+            
+                <%= login_helper "nav-link"%>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
     
     <a name="home"></a>
     <div class="container-fluid">
       <div class="more-space row">
         <div class="col-md-12">
           <div class="text-center intro">
-       <h1 class = "resume">About Me</h1>
+       <h1 class = "resume">Hello !</h1>
           </div>
         </div>
       </div>
@@ -78,38 +79,6 @@
 
 <%= yield %>
   
-<!-- End of Nav -->
-
-
- <!-- Page Header -->
-
-
-  <!-- End of Page Header -->
-
-  <!-- Start of container and row elements -->
- 
-
-
-
-
-
-
-    <!-- start of sidebar -->
-
-
-    <!-- end of sidebar -->
-
-
-  
-
-<!-- end of pager -->
-
-    <!-- start of footer -->
-     <!-- Footer -->
-
-    
-
-    <!-- end of footer -->
         
     
    <%= render "shared/aboutme_footer"  %>

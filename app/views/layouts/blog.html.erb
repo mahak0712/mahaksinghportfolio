@@ -2,26 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-    <meta name="keywords" content="<%= @seo_keywords %>" />
    
-
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet"> 
     <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
+ 
 
   <body>
     
+  
 
 
 
  <!-- Page Header -->
+ 
+ 
+  
 <%= render 'shared/blog_header'%>
+
 
   <!-- End of Page Header -->
 
@@ -30,7 +37,7 @@
 
     <div class="row">
 
-
+   
 
     <%= yield %>
 

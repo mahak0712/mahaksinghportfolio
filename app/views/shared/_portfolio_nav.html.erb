@@ -1,12 +1,10 @@
-
-
-
-<section class="jumbotron text-center" style="background-image: url('/assets/back.jpeg')" id="portSection">
+ <%= render 'shared/blog_nav'%>
+<section class="jumbotron text-center" style="background-image: url('/assets/portfolio.jpg')" id="portSection">
 
     <div class="container">
        
-    <h1 class="jumbotron-heading" style="color: white">My Portfolio</h1>
-    <p class="lead" style="color: white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+    <h1 class="jumbotron-heading" style="color: white; margin-top:10%;">My Portfolio</h1>
+    <p class="lead" style="color: white">Below I have listed some of my favorite projects that I have been working on lately.</p>
     <p><%= link_to "Create New Portfolio Item", new_portfolio_path , style: "color:black;" if logged_in?(:site_admin) %></p>
     <p>
       <%= link_to 'Find Out More About Me', aboutme_path, class: 'btn btn-primary' %>

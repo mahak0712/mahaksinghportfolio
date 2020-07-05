@@ -14,8 +14,6 @@ import 'cocoon-js';
 global.$ = $
 global.jQuery = $
 require('jquery-ui')
-require('jquery-ui/ui/widgets/sortable');
-require('jquery-ui/ui/disable-selection')
 
 
 
@@ -151,9 +149,9 @@ document.addEventListener("turbolinks:load", function () {
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-expand-lg").css({'background-color': 'RGBA(31,146,255,0.9)','color':'black'});
+          $(".navbar-expand-lg").css({'background-color': 'white','color':'black'});
        } else {
-          $('.navbar-expand-lg').css('background-color', 'transparent');
+          $('.navbar-expand-lg').css('background-color', 'white');
        }
    });
     }

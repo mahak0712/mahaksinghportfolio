@@ -1,5 +1,5 @@
- <header class="masthead" style="background-image: url('/assets/blog_background.jpg')">
-   <%= render 'shared/blog_nav'%>
+ <header class="masthead" style="background-image: url('/assets/blog_background')">
+ <%= render 'shared/blog_nav'%>
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -8,7 +8,7 @@
              <div class="card" style="background:none; border-style: none" >
             <h2><%= @page_title %></h2>
 
-            <p style="font-size: 20px;"> <%=   @published.strftime( "%A, %B %e,  %Y ") if @published  %>  </p>
+            <p style="font-size: 30px; color: #868e96;"> <%=   @published.strftime( "%A, %B %e,  %Y ") if @published  %>  </p>
             <span class="subheading"><%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></span>
             <h3><%= link_to 'Topics', topics_path %></h3>
           </div>
@@ -17,6 +17,7 @@
       </div>
     </div>
   </header>
+  
 
 
   

@@ -91,33 +91,16 @@ p {
 p a {
   text-decoration: underline;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #efefef;
-    z-index: 9999;
-}
 
-.sticky #mainNav { margin-top: 18px; }
-
-.sticky #mainNav li a:link,
-.sticky #mainNav li a:visited {
-    padding: 16px 0;
-    color: #555;
-}
-
-.sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
 
 header {
-    
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    background-attachment: fixed;
+
+  background:  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:70vh;
 }
 
 h1,
@@ -188,100 +171,11 @@ img::-moz-selection {
   background: transparent;
 }
 
-#mainNav {
-  position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
-#mainNav .navbar-brand {
-  font-weight: 800;
-  color: #343a40;
-
-
-}
-
-
-
-#mainNav .navbar-toggler {
-  font-size: 12px;
-  font-weight: 800;
-  padding: 13px;
-  text-transform: uppercase;
-  color: #343a40;
-}
-
-#mainNav .navbar-nav > li.nav-item > a {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-    background: transparent;
-  }
-  #mainNav .navbar-brand {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  #mainNav .navbar-nav > li.nav-item > a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
-    transition: background-color 0.2s;
-    /* Force Hardware Acceleration in WebKit */
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-  }
-  #mainNav.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -67px;
-    transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
-  }
-}
 
 header.masthead {
   margin-bottom: 50px;
-  background: no-repeat center center;
-  background-color: #868e96;
-  background-attachment: scroll;
-  position: relative;
-  background-size: cover;
+ 
 }
 
 header.masthead .overlay {
@@ -290,8 +184,8 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
-  opacity: 0.5;
+ 
+  opacity: 0.1;
 }
 
 header.masthead .page-heading,
@@ -315,8 +209,9 @@ header.masthead .site-heading {
 }
 
 header.masthead .page-heading h1,
-header.masthead .site-heading h1 {
+header.masthead .site-heading h2 {
   font-size: 50px;
+  color: #868e96;
   margin-top: 0;
 }
 
@@ -325,6 +220,7 @@ header.masthead .site-heading .subheading {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
+  color: #868e96;
   display: block;
   margin: 10px 0 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -332,12 +228,12 @@ header.masthead .site-heading .subheading {
 
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
+  header.masthead .site-heading h2 {
     font-size: 80px;
   }
 }
 
-header.masthead .post-heading h1 {
+header.masthead .post-heading h2 {
   font-size: 35px;
 }
 
@@ -366,7 +262,7 @@ header.masthead .post-heading .meta a {
 }
 
 @media only screen and (min-width: 768px) {
-  header.masthead .post-heading h1 {
+  header.masthead .post-heading h2 {
     font-size: 55px;
   }
   header.masthead .post-heading .subheading {
@@ -680,7 +576,7 @@ button:hover {
  font-family: "Monoton";
   color: black;
 margin-right:20px;
-  font-size:30px;
+  font-size:25px;
   font-style:bold;
 }
 .nav-link:hover{
@@ -761,3 +657,26 @@ color:white;
 
 }
 
+.card-notify-year {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  background: #00657b;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;      
+  font-size: 14px;      
+  width: 100px;
+  height: 100px;    
+  padding: 15px 0 0 0;
+}
+
+@media screen and (max-width: 767px)  {
+  .card-notify-year{
+    font-size: 8px;
+    width: 50px;
+    height: 50px;
+
+  }
+  
+}

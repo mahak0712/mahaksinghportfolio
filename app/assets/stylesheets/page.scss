@@ -114,12 +114,12 @@ background-color: #34262B;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:50vh;
+  height:50%;
 }
 
 .break2 p {
   padding:30px;
- 
+  font-size:50px;
  
 }
 
@@ -157,9 +157,9 @@ background-color: #34262B;
 }
 
 .team {
-  margin-top: 25%;
+ 
   border: 1px solid #FDFFFC;
-  padding: 20px 50px 20px 50px;
+  padding: 10px 30px 10px 30px;
   text-decoration: none;
   color: #F9F2F6;
 }
@@ -230,6 +230,12 @@ footer .copyright {
   header h4 {
     font-size: 20px;
     margin-bottom: 15%;
+  }
+  .break2 p {
+    font-size: 5px;
+    
+   
+   
   }
   
   .about-us-p {
@@ -401,20 +407,14 @@ footer .copyright {
 
 
 .img {
-  width: 500px;
-  height: 300px;
-  border:2px solid #fff;
-  
-  background-color: #34262B;
 
-  
+  border:2px solid #fff;
+  background-color: #34262B;
  background: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
-  height:50vh;
   -moz-box-shadow: inset 10px 10px 50px #fff;
   -webkit-box-shadow: inset 10px 10px 50px #fff;
   box-shadow: inset 10px 10px 50px #fff;
@@ -433,7 +433,7 @@ footer .copyright {
   left: 0;
   letter-spacing: 5px;
   text-align: center;
-  text-transform: uppercase;
+ 
  
   width: auto;
   animation: move linear 2000ms infinite;  
@@ -446,18 +446,18 @@ footer .copyright {
       3px -3px 0 hsla(0, 0%, 100%, 1), 
       2px -2px 0 hsla(0, 0%, 100%, 1), 
       1px -1px 0 hsla(0, 0%, 100%, 1),
-      -4px 4px 0 rgba(100,149,237 ,1), 
-      -3px 3px 0 rgba(100,149,237 ,1), 
-      -2px 2px 0 rgba(100,149,237 ,1),  
-      -1px 1px 0 rgba(100,149,237 ,1)
+      -4px 4px 0 hsla(0, 0%, 100%, 1), 
+      -3px 3px 0 hsla(0, 0%, 100%, 1), 
+      -2px 2px 0 hsla(0, 0%, 100%, 1),  
+      -1px 1px 0 hsla(0, 0%, 100%, 1)
     ;
   }
   25% {    
     text-shadow:      
-      -4px -4px 0 rgba(100,149,237, 1),  
-      -3px -3px 0 rgba(100,149,237, 1),  
-      -2px -2px 0 rgba(100,149,237, 1), 
-      -1px -1px 0 rgba(100,149,237, 1), 
+      -4px -4px 0 hsla(0, 0%, 100%, 1),  
+      -3px -3px 0 hsla(0, 0%, 100%, 1),  
+      -2px -2px 0 hsla(0, 0%, 100%, 1), 
+      -1px -1px 0 hsla(0, 0%, 100%, 1), 
       4px 4px 0 hsla(0, 0%, 100%, 1), 
       3px 3px 0 hsla(0, 0%, 100%, 1), 
       2px 2px 0 hsla(0, 0%, 100%, 1), 
@@ -470,18 +470,18 @@ footer .copyright {
       -3px 3px 0 hsla(0, 0%, 100%, 1), 
       -2px 2px 0 hsla(0, 0%, 100%, 1), 
       -1px 1px 0 hsla(0, 0%, 100%, 1),
-      4px -4px 0 rgba(100,149,237, 1),  
-      3px -3px 0 rgba(100,149,237, 1),  
-      2px -2px 0 rgba(100,149,237, 1), 
-      1px -1px 0 rgba(100,149,237 ,1), 
+      4px -4px 0 hsla(0, 0%, 100%, 1), 
+      3px -3px 0 hsla(0, 0%, 100%, 1), 
+      2px -2px 0 hsla(0, 0%, 100%, 1), 
+      1px -1px 0 hsla(0, 0%, 100%, 1),
     ;
   }
   75% {
     text-shadow:
-      4px 4px 0 rgba(100,149,237 ,1), 
-      3px 3px 0 rgba(100,149,237, 1),  
-      2px 2px 0 rgba(100,149,237, 1), 
-      1px 1px 0 rgba(100,149,237, 1), 
+    4px 4px 0 hsla(0, 0%, 100%, 1), 
+    3px 3px 0 hsla(0, 0%, 100%, 1), 
+    2px 2px 0 hsla(0, 0%, 100%, 1), 
+    1px 1px 0 hsla(0, 0%, 100%, 1) 
       -4px -4px 0 hsla(0, 0%, 100%, 1), 
       -3px -3px 0 hsla(0, 0%, 100%, 1), 
       -2px -2px 0 hsla(0, 0%, 100%, 1), 
@@ -494,10 +494,10 @@ footer .copyright {
       3px -3px 0 hsla(0, 0%, 100%, 1), 
       2px -2px 0 hsla(0, 0%, 100%, 1), 
       1px -1px 0 hsla(0, 0%, 100%, 1),
-      -4px 4px 0 rgba(100,149,237, 1),  
-      -3px 3px 0 rgba(100,149,237, 1),  
-      -2px 2px 0 rgba(100,149,237, 1),  
-      -1px 1px 0 rgba(100,149,237, 1)
+      -4px 4px 0 hsla(0, 0%, 100%, 1), 
+      -3px 3px 0 hsla(0, 0%, 100%, 1), 
+      -2px 2px 0 hsla(0, 0%, 100%, 1), 
+      -1px 1px 0 hsla(0, 0%, 100%, 1),
     ;
   }  
 }
@@ -557,21 +557,22 @@ footer .copyright {
 
 .nav-link{
   font-family: "Monoton";
-  color: white;
+  color: black;
 
   font-size:25px;
   font-style:bold;
 }
 
 .nav-link:hover{
- color:white;
-  text-decoration:underline;
+ color:black;
+  
 
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white;
+    color: #4A0813;
 }
+
 
 
 
@@ -584,7 +585,7 @@ a{
 }
 
 .photo{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -592,8 +593,8 @@ a{
 }
 
 .photo img{
-  width: 450px;
-  height: 350px;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   filter: grayscale(100%) contrast(120%);
   box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
