@@ -11,24 +11,10 @@
 
 /* ----- LINKS ----- */
 
-a:link,
-a:visited {
-    color: #e67e22;
-    text-decoration: none;
-    padding-bottom: 1px;
-    
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
-}
 
-a:hover,
-a:active {
- 
-}
 
 /* ----- BUTTONS ----- */
-.btn:link,
-.btn:visited,
+.btn,
 input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
@@ -39,8 +25,7 @@ input[type=submit] {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
+.btn-full,
 input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
@@ -48,7 +33,7 @@ input[type=submit] {
     margin-right: 15px;
 }
 
-.btn-ghost:link,
+.btn-ghost,
 .btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
@@ -340,7 +325,7 @@ footer .copyright {
   margin: 0;
   font-size: 38px;
   letter-spacing: -.25px;
-  transform: translateX(-44px);
+  transform: translateX(-60px);
   font-family: 'Sarala'; 
   font-weight: 700;
 }
@@ -454,7 +439,7 @@ button:hover{
 .price{
   position: absolute;
   bottom: 34px;
-  left: 21px;
+  left: 10px;
   font-size: 24px;
   opacity: .67;
 }
@@ -473,7 +458,37 @@ button:hover{
     transform: scale(.89);
   }
 }
+.nav-link{
+  font-family: "Monoton";
+   color: black;
+ margin-right:20px;
+   font-size:25px;
+   font-style:bold;
+  
+ }
+ 
 @media screen and (max-width: 767px) {
+  .price{
+    left: 40px;  
+  }
+
+  .heading{
+    transform: translateX(-30px);
+  }
+  
+  .nav-link{
+    font-family: "Monoton";
+     color: black;
+     margin-left: 0px;
+   margin-right:0px;
+     font-size:10px;
+     font-style:bold;
+   }
+
+  
+   .navbar-brand{
+     display:none;
+   }
   .wrapper{
     width: 350px;
     height: 480px;
@@ -499,15 +514,12 @@ button:hover{
     transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
   }
 }
-    
+.navbar-brand{
+  margin-left: 80px;
+ margin-right: 30%;
+}
 
-.nav-link{
-  font-family: "Monoton";
-   color: black;
- margin-right:20px;
-   font-size:25px;
-   font-style:bold;
- }
+
 
 
 

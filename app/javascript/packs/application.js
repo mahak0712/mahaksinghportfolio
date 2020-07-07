@@ -142,6 +142,7 @@ window.onload = function() {
 
 
 document.addEventListener("turbolinks:load", function () {
+  
  var scroll_start = 0;
    var startchange = $('#startchange');
    var offset = startchange.offset();
