@@ -6,7 +6,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
              <div class="card" style="background:none; border-style: none" >
-            <h3><%= @page_title %></h3>
+            <h3 style="color:#315559"><%= @page_title %></h3>
 
             <p style="font-size: 30px; color: #868e96;"> <%=   @published.strftime( "%A, %B %e,  %Y ") if @published  %>  </p>
             <span class="subheading"><%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></span>
