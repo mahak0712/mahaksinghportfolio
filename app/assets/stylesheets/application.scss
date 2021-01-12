@@ -89,6 +89,9 @@ body {
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
+.nav-link {
+  color: #4A0813;
+}
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
@@ -236,7 +239,7 @@ z
   transition: 0.5s;
   display: inline-block;
   border-radius: 4px;
-  background-color: #D6133A;
+  background-color: #f4c2c2;
   border: 1px;
   border-style: solid;
   border-color: white;
@@ -470,7 +473,7 @@ a{
   
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: #4A0813;
 }
 .navbar{
   background-color: transparent;
@@ -501,8 +504,9 @@ a{
   background-color: white;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: #4A0813;
 }
+
 .cover-heading{
   text-align: left;
   margin-top:30%;
