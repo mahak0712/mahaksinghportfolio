@@ -32,12 +32,12 @@
     
   </div>
 </nav>
-<section class="jumbotron text-center" style="background-image: url('/assets/portfolio.jpg')" id="portSection">
+<section class="jumbotron text-center" style="background-image: url('/assets/office1.jpg')" id="portSection">
 
     <div class="container">
        
-    <h1 class="jumbotron-heading" style="color: white; margin-top:10%;">My Portfolio</h1>
-    <p class="lead" style="color: white">Below I have listed some of my favorite projects that I have been working on lately.</p>
+    <h1 class="jumbotron-heading" style="color: black; opacity: .67;margin-top:10%;">My Portfolio</h1>
+    <p class="lead" style="color: black; opacity: .57;">Below I have listed some of my favorite projects that I have been working on lately.</p>
     <p><%= link_to "Create New Portfolio Item", new_portfolio_path , style: "color:black;" if logged_in?(:site_admin) %></p>
     <p>
       <%= link_to 'Find Out More About Me', aboutme_path, class: 'btn btn-primary' %>

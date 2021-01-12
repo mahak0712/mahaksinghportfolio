@@ -297,13 +297,13 @@ footer .copyright {
 }
 
 .front{
-  background-image: linear-gradient(180deg, rgba(70,130,180,1) 0%, rgba(92,91,94,0) 100%);
+  background-image: linear-gradient(180deg, #f4c2c2 0%, rgba(92,91,94,0) 100%);
   transform: rotateY(0deg) translateZ(160px); 
   border-radius: 34px 3px 0 0;
 }
 
 .right{ 
-  background-image: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(92,91,94,0) 100%);
+  background-image: linear-gradient(0deg, #f4c2c2 0%, rgba(92,91,94,0) 100%);
   opacity: 0.08;
   transform: rotateY(90deg) translateZ(160px);
   border-radius: 0 0 3px 34px;
@@ -466,7 +466,9 @@ button:hover{
    font-style:bold;
   
  }
- 
+ .nav-link {
+  color: #4A0813;
+}
 @media screen and (max-width: 767px) {
   .price{
     left: 40px;  
