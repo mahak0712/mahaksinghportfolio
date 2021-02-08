@@ -55,7 +55,7 @@ gem 'mahak_singh_view_tool',git: 'https://github.com/mahak0712/mahak_singh_view_
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari', '~> 1.2'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'carrierwave-aws', '~> 1.4'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5', require: 'dotenv/rails-now'
